@@ -2,6 +2,8 @@
 * Game Engine: Godot
 * 3D Art/Modeling: Blender
 
+Todo: Develop a pipeline for making game assets and moving them to godot easily and quickly
+
 ## Currently Investigating
 * [Blender to Godot Pipeline Tool](https://store.godotengine.org/asset/michael-jared/blender-godot-pipeline/)
 * [Smartify nodes/texture creator](https://superhivemarket.com/products/smartify-nodes)
