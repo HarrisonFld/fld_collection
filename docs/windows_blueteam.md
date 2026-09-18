@@ -14,11 +14,27 @@
 ## Sysinternals Suite Provided by Windows
 * Use sysmon
 * AutoRuns - Finds anything that auto starts and has some advanced auto features like uploading to VirusTotal
+
+## Common windows CLI commands
+### Command Prompt
+```
+query user # Display a list of users
+
+```
+### Powershell
+```
+Get-LocalUser # Get all local users
+Get-ADUser -Filter * # Get all active directory users
+```
     
 ## SMB
 * Disable SMB null and anonymous authentication
     - This is something that allows somebody to login without username and password and is abused frequently
     - Possibly keep it enabled and automatically block IPs that connect via it
+    
+## SSH
+* Routinely check what SSH public keys are being stored and accepted
+* Routinely check SSH configuration
     
 ## Dictionary
 * Endpoint: Any decive that connects to a network and can send, recieve, or process data.

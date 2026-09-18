@@ -4,6 +4,9 @@
 
 Todo: Develop a pipeline for making game assets and moving them to godot easily and quickly
 
+# Trees and Foliage
+* [Soft pastel trees](https://www.youtube.com/watch?v=GOfttJQ-FGw)
+
 ## Currently Investigating
 * [Blender to Godot Pipeline Tool](https://store.godotengine.org/asset/michael-jared/blender-godot-pipeline/)
 * [Smartify nodes/texture creator](https://superhivemarket.com/products/smartify-nodes)
