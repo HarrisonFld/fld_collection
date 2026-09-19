@@ -24,6 +24,8 @@ query user # Display a list of users
 ### Powershell
 ```
 Get-LocalUser # Get all local users
+```
+```
 Get-ADUser -Filter * # Get all active directory users
 ```
     
