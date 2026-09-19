@@ -49,7 +49,7 @@ Get-ADUser -Filter * # Get all active directory users
     
 
 ## Recommended Tools
-* Wazuh + https://github.com/socfortress/Wazuh-Rules/blob/main/Windows%20Powershell/100535-win_powershell_rules.xml
-* LDAP Object Monitor: https://github.com/p0dalirius/LDAPmonitor
-* BlueSpawn (EDR tailored software): https://github.com/ION28/BLUESPAWN
-* AtomicRedTeam (Simulate attacks to test endpoint): https://www.atomicredteam.io/
+* [Wazuh | SIEM](https://wazuh.com/) + [Detection Rules](https://github.com/socfortress/Wazuh-Rules/blob/main/Windows%20Powershell/100535-win_powershell_rules.xml)
+* [LDAP Object Monitor | Active Directory Monitor](https://github.com/p0dalirius/LDAPmonitor)
+* [BlueSpawn | EDR tailored software](https://github.com/ION28/BLUESPAWN)
+* [AtomicRedTeam | Simulate attacks to test endpoint](https://www.atomicredteam.io/)
