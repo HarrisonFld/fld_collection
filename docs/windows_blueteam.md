@@ -1,4 +1,29 @@
 # Windows Blue Team
+* Everything in windows is a service
+* Services are OS managed programs
+* Windows Desktop OS and Windows Server can run the same programs, but some server programs dont run on desktop
+
+WinRM
+
+Server Manager - "Used for Roles and Features"
+
+Microsoft Management Console
+
+Local User Manager
+
+Task Scheduler - Used to automatically run task on login or at a specific time (favorite of red team)
+
+Registry Editor
+
+Group Policy Editor
+
+Tcpview
+Procexp
+Procmod
+
+Learn how to domain join two windows
+
+No active directory at plinko
 
 ## Record events and take them off server for viewing and notification of suspicious activity
 * Use sysmon
@@ -14,6 +39,11 @@
 ## Sysinternals Suite Provided by Windows
 * Use sysmon
 * AutoRuns - Finds anything that auto starts and has some advanced auto features like uploading to VirusTotal
+
+## Powershell Logging
+Enable powershell logging to record what has been allowed by powershell
+* Script Block Logging - Will record blocks of powershell code as they are evaluated (de-obfuscate obfuscated code)
+* Transcription - Will record the exact input into powershell that the user would see
 
 ## Common windows CLI commands
 ### Command Prompt
@@ -37,7 +67,7 @@ Get-ADUser -Filter * # Get all active directory users
 ## SSH
 * Routinely check what SSH public keys are being stored and accepted
 * Routinely check SSH configuration
-    
+
 ## Dictionary
 * Endpoint: Any decive that connects to a network and can send, recieve, or process data.
 * Sysmon: A windows service thats logs system activity to the Windows Event Log
@@ -46,6 +76,7 @@ Get-ADUser -Filter * # Get all active directory users
 * Directory Server: Centralized databases that store and manage information about users, devices, and network resources.
     - Active Directory: Windows server version of a directory server
 * EDR: Endpoint and Detection Response
+* Beacon: A type of malware that sends information from a compromised system to the Command and Control Center to signal that the system has been comrpomised
     
 
 ## Recommended Tools
