@@ -3,27 +3,16 @@
 * Services are OS managed programs
 * Windows Desktop OS and Windows Server can run the same programs, but some server programs dont run on desktop
 
-WinRM
+## What needs to be done first
+1. Install necessary software (sysinternals) using winget
+2. Make backups of scored and necessary services
+3. Change password of services 
 
-Server Manager - "Used for Roles and Features"
-
-Microsoft Management Console
-
-Local User Manager
-
-Task Scheduler - Used to automatically run task on login or at a specific time (favorite of red team)
-
-Registry Editor
-
-Group Policy Editor
-
-Tcpview
-Procexp
-Procmod
-
-Learn how to domain join two windows
-
-No active directory at plinko
+## General Threat Hunting
+1. Check Windows Logs
+2. Check on users, active users, user changes
+3. Check on SSH keys and SSH Config
+4. Check running processes
 
 ## Record events and take them off server for viewing and notification of suspicious activity
 * Use sysmon
@@ -84,3 +73,12 @@ Get-ADUser -Filter * # Get all active directory users
 * [LDAP Object Monitor | Active Directory Monitor](https://github.com/p0dalirius/LDAPmonitor)
 * [BlueSpawn | EDR tailored software](https://github.com/ION28/BLUESPAWN)
 * [AtomicRedTeam | Simulate attacks to test endpoint](https://www.atomicredteam.io/)
+* Sysinternals 
+    * Tcpview - View processes with active network ports (Useful for finding beacons)
+    * Procexp - View ALL processes (Use for finding a running malware)
+    * Procmon - View processes file operations, thread operations, and regedits (Kind of a large list, may not be very useful)
+* Group Policy Editor
+* Registry Editor - View the registry (Not very useful for search, better to use logs)
+* Task Scheduler - View processes that are scheduled
+* Computer Management - All in one view for managing the server. View users, groups, etc.
+* Server Manager - All in one view for server features. View services and events.
