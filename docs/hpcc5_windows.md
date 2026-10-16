@@ -17,3 +17,12 @@
 * Monitor OpenObserve SIEM
 * Check on users, logged-in users, and user logs
 * Block IPs of the Attackers if found
+
+## Jenkins
+1. Using ``` choco install caddy ```
+2. Using caddy put cf onto the server and then run ``` caddy start --config cf ```
+3. Go to ProgramData\Jenkins\jenkins.xml and change the http port to 8001
+4. Then go to /restart under the Jenkins
+5. To make it run without a terminal window:
+    * ``` Start-Process "caddy" -ArgumentList "start" -WindowStyle Hidden ```
+    * ``` caddy reload cf ``` <- At cf location

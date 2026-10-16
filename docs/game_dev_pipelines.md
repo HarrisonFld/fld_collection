@@ -20,3 +20,4 @@ Todo: Develop a pipeline for making game assets and moving them to godot easily 
 * [Fluent Materializer | Full featured texturing toolset](https://superhivemarket.com/products/fluent-materializer)
 * [Cyclops Level Builder | In-Godot level prototyping](https://github.com/blackears/cyclopsLevelBuilder)
 * [TrenchBroom | Full-featured level creator/prototyping](https://trenchbroom.github.io/)
+* [CSG Blockout | In-Godot level prototyping](https://store.godotengine.org/asset/qwqzhanqwq/csg-blockout/)
