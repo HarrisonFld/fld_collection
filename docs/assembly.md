@@ -15,6 +15,7 @@ https://wiki.osdev.org/CPU_Registers_x86-64#General_Purpose_Registers
 
 ## Syscalls
 https://filippo.io/linux-syscall-table/
+
 * RAX - Used for choosing syscalls.
 * RDI - Used for the first argument of a syscall. Is often the "File Descriptor".
 * RSI - Used for the second argument of a syscall. Is often the pointer to the data for the syscall to use.

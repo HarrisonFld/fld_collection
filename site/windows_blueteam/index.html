@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../game_dev_pipelines/">
+        <link rel="prev" href="../study_plan/">
       
       
       
@@ -268,6 +268,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../assembly/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Learning Assembly
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../game_dev_pipelines/" class="md-nav__link">
         
   
@@ -276,6 +302,58 @@
     
   
   Game Development Pipelines
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hpcc4_windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Horse Plinko Cyber Challenge 4 (Windows Server 2022)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../study_plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Study Plan
 
     
   </span>
@@ -353,6 +431,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#what-needs-to-be-done-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        What needs to be done first
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-threat-hunting" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        General Threat Hunting
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#record-events-and-take-them-off-server-for-viewing-and-notification-of-suspicious-activity" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -379,6 +479,17 @@
     <span class="md-ellipsis">
       <span class="md-typeset">
         Sysinternals Suite Provided by Windows
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#powershell-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Powershell Logging
       </span>
     </span>
   </a>
@@ -517,6 +628,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#what-needs-to-be-done-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        What needs to be done first
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-threat-hunting" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        General Threat Hunting
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#record-events-and-take-them-off-server-for-viewing-and-notification-of-suspicious-activity" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -543,6 +676,17 @@
     <span class="md-ellipsis">
       <span class="md-typeset">
         Sysinternals Suite Provided by Windows
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#powershell-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Powershell Logging
       </span>
     </span>
   </a>
@@ -659,6 +803,24 @@
 
 
 <h1 id="windows-blue-team">Windows Blue Team<a class="headerlink" href="#windows-blue-team" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Everything in windows is a service</li>
+<li>Services are OS managed programs</li>
+<li>Windows Desktop OS and Windows Server can run the same programs, but some server programs dont run on desktop</li>
+</ul>
+<h2 id="what-needs-to-be-done-first">What needs to be done first<a class="headerlink" href="#what-needs-to-be-done-first" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Install necessary software (sysinternals) using winget</li>
+<li>Make backups of scored and necessary services</li>
+<li>Change password of services </li>
+</ol>
+<h2 id="general-threat-hunting">General Threat Hunting<a class="headerlink" href="#general-threat-hunting" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Check Windows Logs</li>
+<li>Check on users, active users, user changes</li>
+<li>Check on SSH keys and SSH Config</li>
+<li>Check running processes</li>
+</ol>
 <h2 id="record-events-and-take-them-off-server-for-viewing-and-notification-of-suspicious-activity">Record events and take them off server for viewing and notification of suspicious activity<a class="headerlink" href="#record-events-and-take-them-off-server-for-viewing-and-notification-of-suspicious-activity" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Use sysmon</li>
@@ -677,6 +839,10 @@
 <li>Use sysmon</li>
 <li>AutoRuns - Finds anything that auto starts and has some advanced auto features like uploading to VirusTotal</li>
 </ul>
+<h2 id="powershell-logging">Powershell Logging<a class="headerlink" href="#powershell-logging" title="Permanent link">&para;</a></h2>
+<p>Enable powershell logging to record what has been allowed by powershell
+* Script Block Logging - Will record blocks of powershell code as they are evaluated (de-obfuscate obfuscated code)
+* Transcription - Will record the exact input into powershell that the user would see</p>
 <h2 id="common-windows-cli-commands">Common windows CLI commands<a class="headerlink" href="#common-windows-cli-commands" title="Permanent link">&para;</a></h2>
 <h3 id="command-prompt">Command Prompt<a class="headerlink" href="#command-prompt" title="Permanent link">&para;</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>query user # Display a list of users
@@ -710,6 +876,7 @@
 </ul>
 </li>
 <li>EDR: Endpoint and Detection Response</li>
+<li>Beacon: A type of malware that sends information from a compromised system to the Command and Control Center to signal that the system has been comrpomised</li>
 </ul>
 <h2 id="recommended-tools">Recommended Tools<a class="headerlink" href="#recommended-tools" title="Permanent link">&para;</a></h2>
 <ul>
@@ -717,6 +884,17 @@
 <li><a href="https://github.com/p0dalirius/LDAPmonitor">LDAP Object Monitor | Active Directory Monitor</a></li>
 <li><a href="https://github.com/ION28/BLUESPAWN">BlueSpawn | EDR tailored software</a></li>
 <li><a href="https://www.atomicredteam.io/">AtomicRedTeam | Simulate attacks to test endpoint</a></li>
+<li>Sysinternals <ul>
+<li>Tcpview - View processes with active network ports (Useful for finding beacons)</li>
+<li>Procexp - View ALL processes (Use for finding a running malware)</li>
+<li>Procmon - View processes file operations, thread operations, and regedits (Kind of a large list, may not be very useful)</li>
+</ul>
+</li>
+<li>Group Policy Editor</li>
+<li>Registry Editor - View the registry (Not very useful for search, better to use logs)</li>
+<li>Task Scheduler - View processes that are scheduled</li>
+<li>Computer Management - All in one view for managing the server. View users, groups, etc.</li>
+<li>Server Manager - All in one view for server features. View services and events.</li>
 </ul>
 
 
@@ -757,7 +935,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../game_dev_pipelines/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Game Development Pipelines">
+          <a href="../study_plan/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Study Plan">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -767,7 +945,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Game Development Pipelines
+                Study Plan
               </div>
             </div>
           </a>
