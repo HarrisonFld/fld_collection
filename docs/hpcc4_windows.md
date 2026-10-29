@@ -34,5 +34,21 @@ In general changing users is done under the software "Computer Management"
     * To monitor logged-in users go to Task Manager and click on "Users" tab
 * If a user needs to be added to administrator, click on properties and add user to the role "Administrators"
 
+## HPCC 4 After Summary
+* Placed 11 / 35 on Sunday
+* Jenkins service uptime was not good (66%)
 
-## Windows Firewall and Blocking IPs
+### HPCC Tips For Next Time
+1. Reinstall scored services while keeping their configurations (many services came with backdoors)
+    * Make sure this is possible on each service BEFORE competition
+2. Turn off or remove access to boxes as soon as the competition starts
+    * Red team gets access at the same time, so they in en-masse executed scripts on our machines
+    * Preferably instead of turning them off allow connections only to blackbox and your machine.
+3. Scripts should really be pre-made for the following:
+    * Removing every user except required users (jmoney, plinktern)
+    * Changing the passwords of services could be automatic (possibly, might not be realistic)
+4. Downtime is ALWAYS bad 
+    * Limit restarts, it adds up overtime
+5. Total360 Antivirus worked
+6. Look into using Yara to find malicious code
+7. Make wild passwords lol
