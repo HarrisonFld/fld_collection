@@ -14,7 +14,7 @@ https://wiki.osdev.org/CPU_Registers_x86-64#General_Purpose_Registers
 * rbx, rbp, r12, r13, r14, r15 - called-saved, must be untouched by called functions
 
 ## Syscalls
-[Linux Syscalls Table](https://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/)
+[Linux Syscalls Table](https://syscall.sh/x64/)
 
 * RAX - Used for choosing syscalls.
 * RDI - Used for the first argument of a syscall. Is often the "File Descriptor".
